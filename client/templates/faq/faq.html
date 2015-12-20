@@ -1,0 +1,17 @@
+<template name="faq">
+
+    <!-- If you are using version 5.5 or greater you can use <ul>'s and <li>'s for Accordion markup -->
+
+    <ul class="accordion" data-accordion>
+       {{#each questions}}
+        <li class="accordion-navigation">
+            <a href="#panel-{{i}}">{{question}}</a>
+            <div id="panel-{{i}}" class="content">
+                {{answer}}
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+
+
+</template>
